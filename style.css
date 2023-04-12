@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu');
+
+* {
+    box-sizing: border-box; /** universal so that if we add and padding or border to an element, it doesn't affect it's width**/
+}
+
+body{
+    font-family: 'Ubuntu', sans-serif;
+    display: flex;
+    flex-direction: column; /** To Ensure that it displays vertically rather than horizontally **/
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden; /**Not to show scroll bars by default **/
+    margin: 0;
+}
+
+.bg {
+    background: url('https://images.unsplash.com/file-1636585210491-f28ca34ea8ecimage?dpr=2&auto=format&fit=crop&w=416&q=60') 
+    no-repeat center center/cover;
+    position: absolute;
+    top: -30px;
+    left: -30px;
+    width: calc(100vw + 60px);
+    height: calc(100vh + 60px);
+    z-index: -1;
+    filter: blur(0px);
+}
+
+.loading-text {
+    font-size: 50px;
+    color: #fff;
+}
